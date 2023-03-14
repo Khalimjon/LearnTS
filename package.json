@@ -1,0 +1,27 @@
+{
+  "name": "mg-services-api",
+  "version": "1.0.0",
+  "description": "MyGov Services API (OneID, Epigu)",
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Abdumalik Abdujabborov",
+    "email": "icemalik95@gmail.com"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "nodemon -e ts  --exec npm run dev",
+    "car": "ts-node src/car.ts",
+    "build": "tsc",
+    "prettier": "prettier --write {src,test}/**/*.ts"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prettier": "^2.8.3",
+    "ts-node": "^10.9.1",
+    "typescript": "~4.9.4"
+  }
+}
