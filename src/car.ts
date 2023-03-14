@@ -1,6 +1,6 @@
-interface ICar{
+ interface ICar {
     printInfo(): string;
-    getCarname(): string;
+    getCarName(): string;
 }
 
 class Car implements ICar{
@@ -19,12 +19,12 @@ class Car implements ICar{
         return `this cars name is ${this.name}, it manufactured in ${this.year} by ${this.model} and you can buy it for ${this.price}.`
     }
 
-    getCarname(): string {
+    getCarName(): string {
         return `the car's name is ${this.name}`
     }
 }
 
-const car = new Car('COBALT', 'Chevrole', 2020, 13000)
+const car = new Car('COBALT', 'Chevrolet', 2020, 13000)
 console.log(car)
 
 console.log(car.printInfo())
