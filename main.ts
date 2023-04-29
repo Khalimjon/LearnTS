@@ -15,8 +15,8 @@
 
 const now = new Date();
 
-const day: number = now.getDay();
-const month: number = now.getMonth();
+const day: number = now.getDate();
+const month: number = now.getMonth() +1;
 const year: number = now.getFullYear();
 
 const formattedDay: string = day < 10 ? `0${day}` : `${day}`;
@@ -31,11 +31,11 @@ console.log(formattedDates)
 // 3-exercise
 
 
-// function sum(a: number, b: number){
-//     return a + b
-// }
-//
-// console.log(sum(17, 200))
+function sum(a: number, b: number){
+    return a + b
+}
+
+console.log(sum(17, 200))
 
 // 4-exercise
 
