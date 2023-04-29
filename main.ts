@@ -13,9 +13,20 @@
 
 //2-exercise
 
-// const now = new Date();
-//
-// console.log(now.toLocaleDateString())
+const now = new Date();
+
+const day: number = now.getDay();
+const month: number = now.getMonth();
+const year: number = now.getFullYear();
+
+const formattedDay: string = day < 10 ? `0${day}` : `${day}`;
+const formattedMonth: string = month < 10 ? `0${month}` : `${month}`;
+const formattedYear: string = `${year}`;
+
+const formattedDates: string = `${formattedDay}/${formattedMonth}/${formattedYear}`
+
+
+console.log(formattedDates)
 
 // 3-exercise
 
@@ -28,25 +39,25 @@
 
 // 4-exercise
 
-
-type User = {
-    firstName: string,
-    lastName: string,
-    phone: number,
-    email: string,
-    age: number,
-    isMarried: boolean,
-}
-
-// exercise 5
-
-const user: User ={
-    firstName: 'palonchi',
-    lastName: 'palonchiyev',
-    phone: 998905833250,
-    email: 'somethin@gail.com',
-    age: 67,
-    isMarried: true
-}
-
-console.log(user)
+//
+// type User = {
+//     firstName: string,
+//     lastName: string,
+//     phone: number,
+//     email: string,
+//     age: number,
+//     isMarried: boolean,
+// }
+//
+// // exercise 5
+//
+// const user: User ={
+//     firstName: 'palonchi',
+//     lastName: 'palonchiyev',
+//     phone: 998905833250,
+//     email: 'somethin@gail.com',
+//     age: 67,
+//     isMarried: true
+// }
+//
+// console.log(user)
